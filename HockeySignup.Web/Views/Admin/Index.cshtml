@@ -1,0 +1,28 @@
+﻿@section css{
+    <link href="/Content/admin-index.css" rel="stylesheet" />
+}
+
+<form class="form-signin" method="POST" action="/admin/createevent">
+    <h2 class="form-signin-heading">Create Event</h2>
+    <select name="maxPeople" class="form-control max-people">
+        <option value="0">-- Max People --</option>
+        @for (int i = 10; i <= 30; i++)
+        {
+            <option value="@i">@i</option>
+        }
+    </select>
+    <label for="date" class="sr-only">Date</label>
+    <input type="date" id="date" name="date" class="form-control datepicker">
+    <div class="checkbox">
+        <label>
+            <input type="checkbox" value="true" name="sendEmail" checked> Send Email
+            <input type="hidden" name="sendEmail" value="false" />
+        </label>
+    </div>
+    <button class="btn btn-lg btn-primary btn-block submit-button" disabled type="submit">Create Event</button>
+</form>
+
+@section scripts
+{
+    <script src="/Scripts/site-scripts/admin-index.js"></script>
+}

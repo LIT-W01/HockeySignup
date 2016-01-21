@@ -1,0 +1,5 @@
+c:\users\alexfriedman\documents\visual studio 2013\Projects\HockeySignup\HockeySignup.Data\bin\Debug\HockeySignup.Data.dll
+c:\users\alexfriedman\documents\visual studio 2013\Projects\HockeySignup\HockeySignup.Data\bin\Debug\HockeySignup.Data.pdb
+c:\users\alexfriedman\documents\visual studio 2013\Projects\HockeySignup\HockeySignup.Data\obj\Debug\HockeySignup.Data.csprojResolveAssemblyReference.cache
+c:\users\alexfriedman\documents\visual studio 2013\Projects\HockeySignup\HockeySignup.Data\obj\Debug\HockeySignup.Data.dll
+c:\users\alexfriedman\documents\visual studio 2013\Projects\HockeySignup\HockeySignup.Data\obj\Debug\HockeySignup.Data.pdb

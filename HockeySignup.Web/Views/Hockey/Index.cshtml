@@ -1,0 +1,20 @@
+﻿@model HockeySignup.Web.Models.HomePageViewModel
+
+@if (!String.IsNullOrEmpty(Model.Message))
+{
+    <div class="alert alert-success">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        @Model.Message
+    </div>
+}
+
+<div class="jumbotron">
+    <div class="container">
+        <h1>Welcome to מוצאי שבת Hockey!</h1>
+        <p>This site will help us keep track of everyone playing. Please signup only
+            if you are sure that you will be able to make it. Looking forward!!
+        </p>
+        <a href="/hockey/notificationsignup" class="btn btn-primary bt-lg">Weekly notifications</a>
+        <a href="/hockey/latest" class="btn btn-primary bt-lg">Signup for next game</a>
+    </div>
+</div>
