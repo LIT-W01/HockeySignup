@@ -6,11 +6,9 @@ using HockeySignup.Data;
 
 namespace HockeySignup.Web.Models
 {
-    public class SignupViewModel
+    public class HistoryViewModel
     {
         public Event Event { get; set; }
-        public EventStatus Status { get; set; }
-        public EventSignup Signup { get; set; }
-
+        public IEnumerable<EventSignup> Signups { get;set; }
     }
 }

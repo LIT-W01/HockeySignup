@@ -1,0 +1,26 @@
+﻿@using HockeySignup.Data
+@model IEnumerable<HockeySignup.Data.EventWithCount>
+
+
+
+<div class="row" style="margin-top: 10px;">
+    <div class="col-md-8 col-md-offset-2">
+        <table class="table table-striped table-hover table-bordered">
+            <tr>
+                <th>Date</th>
+                <th>People</th>
+                <th>Details</th>
+            </tr>
+            @foreach (EventWithCount e in Model)
+            {
+                <tr>
+                    <td>@e.Date.ToShortDateString()</td>
+                    <td>@e.PeopleCount / @e.MaxPeople</td>
+                    <td>
+                        <a href="/admin/eventhistory?id=@e.Id" class="btn btn-danger">Details</a>
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+</div>

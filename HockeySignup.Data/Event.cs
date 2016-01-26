@@ -11,4 +11,9 @@ namespace HockeySignup.Data
         public DateTime Date { get; set; }
         public int MaxPeople { get; set; }
     }
+
+    public class EventWithCount : Event
+    {
+        public int PeopleCount { get; set; }
+    }
 }
